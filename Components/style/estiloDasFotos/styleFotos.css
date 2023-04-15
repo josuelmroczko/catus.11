@@ -6,6 +6,10 @@
   padding-top: 50px;
 }
 
+.novidades, h2, p {
+  text-align: center;
+}
+
 .colunaEsquerda,
 .colunaDireita {
   flex-basis: 100%;

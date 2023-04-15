@@ -1,0 +1,89 @@
+.carousel {
+   position: relative;
+   padding-top: 80px;
+    width: 80%;
+ left: 10%;
+    overflow: hidden;
+
+  
+   
+   
+    
+  }
+  
+  .slider {
+    display: flex;
+    transition: transform 0.5s ease;
+    
+  }
+  
+  .slider img {
+    width: 250px;
+    height: 250px;
+    margin-right: 20px;
+  }
+  
+  .prev,
+  .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+  
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .next {
+    right: 0;
+  }
+  
+  .slider:before,
+  .slider:after {
+    content: "";
+    width: 20px;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    background: linear-gradient(to right, transparent 0, #fff 100%);
+  }
+  
+  .slider:before {
+    left: 0;
+  }
+  
+  .slider:after {
+    right: 0;
+    transform: scaleX(-1);
+  }
+  .caption,h3,p{
+    position: relative;
+    top: 100px;
+   color: aqua;
+  }
+  
+
+  
+  @media (max-width: 768px) {
+    .slider img {
+      width: 150px;
+      height: 150px;
+      margin-right: 10px;
+    }
+    .prev,
+    .next {
+      width: 30px;
+      height: 30px;
+      font-size: 16px;
+    }
+  }
