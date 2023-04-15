@@ -1,6 +1,5 @@
 $cor-preto: #3d3d3d;
 $cor-cinza: #eeeeee;
-$cor-vermelha:#8a0707;
 
 /*Style Menu*/
 .menu {
@@ -10,7 +9,7 @@ $cor-vermelha:#8a0707;
   justify-content: space-evenly;
   border-bottom: 3px solid $cor-cinza;
   align-items: center;
-  
+
   .botaoMenu {
     display: none;
   }
@@ -24,12 +23,10 @@ $cor-vermelha:#8a0707;
     a {
       color: $cor-preto;
       text-decoration: none;
-
+  
     }
   }
-  .botoesMenu{
-  cursor: pointer;
-  }
+
   input {
     border: none;
     border-bottom: 1px solid;
@@ -43,12 +40,10 @@ $cor-vermelha:#8a0707;
 .modalMobile {
   display: none;
 }
-.botaoFechar{
-  position: relative;
-  color:$cor-vermelha;
-  font-weight: bold;
-  left: 25px;
-  font-size: 25px;
+.fundoBotao{
+  color: #3d3d3d;
+  text-decoration: none;
+  font-weight: bolder;
 }
 
 
@@ -69,7 +64,7 @@ $cor-vermelha:#8a0707;
     width: 5%;
     
     .botao {
-      font-size: 25px;
+      font-size: 20px;
     }
   }
 }

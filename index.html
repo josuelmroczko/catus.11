@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="./Components/style/estiloDoMenu/style.css">
   <link rel="stylesheet" href="./styleGlobal/styleGlobal.css">
   <link rel="stylesheet" href="./Components/style/estiloDasFotos/styleFotos.css">
+  <link rel="stylesheet" href="./Components/style/estilocarrossel/carrossel.css">
 </head>
 
 <body>
@@ -23,11 +24,11 @@
       <button class="botao" onclick="document.getElementById('modal').style.display = 'block';"> ≡ </button>
         <div id="modal">
         <div id="modal-conteudo">
-          <a href="#">Loja</a>
-          <a href="#">Login</a>
-          <a href="#">Sobre</a>
-          <a href="#">Contato</a>
-      <button class="botao" onclick="document.getElementById('modal').style.display = 'none';">Fechar</button>
+          <a class="fundoBotao" href="#">Loja</a>
+          <a class="fundoBotao" href="#">Login</a>
+          <a class="fundoBotao" href="#">Sobre</a>
+          <a class="fundoBotao" href="#">Contato</a>
+      <button class="botaoFechar" onclick="document.getElementById('modal').style.display = 'none';">x</button>
     </div>
   </div>
 </div>
@@ -54,19 +55,22 @@
   <!-- Conteúdo da página -->
   <div class="containerImg">
     <div class="colunaEsquerda">
-      <img class="imagensfamilia" src="./Components/Imagens/berço.png" alt="">
-      <img class="imagensfamilia" src="./Components/Imagens/maefilho.png" alt="">
+      <img class="imagensfamilia" src="./Components/Imagens/berço.png" alt="Imagem de um berço  ">
+      <img class="imagensfamilia" src="./Components/Imagens/maefilho.png" alt="imagem de uma mae com o filho ">
     </div>
     
     <div class="colunaMeio">
-      <img class="imagemGrande" src="./Components/Imagens/maeFilhoRua.png" alt="">
+      <img class="imagemGrande" src="./Components/Imagens/maeFilhoRua.png" alt="imagem de uma mae com o filho ">
     </div>
     
     <div class="colunaDireita">
-      <img class="imagensfamilia" src="./Components/Imagens/gravida.png" alt="">
-      <img class="imagensfamilia" src="./Components/Imagens/familia.png" alt="">
+      <img class="imagensfamilia" src="./Components/Imagens/gravida.png" alt="imagem de uma mae gravida olhando uma roupinha de bebe ">
+      <img class="imagensfamilia" src="./Components/Imagens/familia.png" alt="imagem de uma familia">
     </div>
   </div>
-</body>
 
+  <!-- Carrossel  -->
+
+  </div>
+  
 </html>
