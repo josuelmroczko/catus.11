@@ -8,7 +8,7 @@
 
 .colunaEsquerda,
 .colunaDireita {
-  flex-basis: 50%;
+  flex-basis: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -17,14 +17,14 @@
 
 .imagemGrande {
   flex-basis: 100%;
-  max-width: 330px;
+  max-width: 344px;
   width: 100%;
   height: auto;
-  margin: 20px 0;
+  padding-bottom: 20px;
   overflow: hidden;
 }
 
-.imgPequena {
+.imagensfamilia {
   max-width: 350px;
   width: 100%;
   height: auto;
@@ -40,7 +40,9 @@
     flex-basis: 50%;
     margin: 0 20px;
   }
-  .imgPequena {
-    margin-bottom: 40px;
+  .imagensfamilia {
+    height: 235px;
+    width: 350px;
+    margin-bottom: 20px;
   }
 }/*# sourceMappingURL=styleFotos.css.map */
