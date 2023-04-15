@@ -1,0 +1,80 @@
+$cor-preto: #3d3d3d;
+$cor-cinza: #eeeeee;
+$cor-vermelha:#8a0707;
+
+/*Style Menu*/
+.menu {
+  display: flex;
+  width: 100%;
+  height: 60px;
+  justify-content: space-evenly;
+  border-bottom: 3px solid $cor-cinza;
+  align-items: center;
+  
+  .botaoMenu {
+    display: none;
+  }
+
+  ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    width: 30%;
+
+    a {
+      color: $cor-preto;
+      text-decoration: none;
+
+    }
+  }
+  .botoesMenu{
+  cursor: pointer;
+  }
+  input {
+    border: none;
+    border-bottom: 1px solid;
+  }
+
+  button {
+    background-color: transparent;
+    border: none;
+  }
+}
+.modalMobile {
+  display: none;
+}
+.botaoFechar{
+  position: relative;
+  color:$cor-vermelha;
+  font-weight: bold;
+  left: 25px;
+  font-size: 25px;
+}
+
+
+@media screen and (max-width: 700px) {
+  li {
+    display: none;
+  }
+  .botaomenu {
+    display: flex;
+    
+  }
+  .modalMobile {
+    position: relative;
+    display: block;
+    height: 20px;
+    padding-left: 10%;
+    font-size: 20px;
+    width: 5%;
+    
+    .botao {
+      font-size: 25px;
+    }
+  }
+}
+@media screen and (max-width: 455px){
+  .digiteaqui{
+    display: none;
+  }
+} 

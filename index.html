@@ -1,46 +1,72 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catus</title>
-    <link rel="stylesheet" href="./Components/style/style.css">
-    <link rel="stylesheet" href="./styleGlobal/styleGlobal.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catus</title>
+  <link rel="stylesheet" href="./Components/style/estiloDoMenu/style.css">
+  <link rel="stylesheet" href="./styleGlobal/styleGlobal.css">
+  <link rel="stylesheet" href="./Components/style/estiloDasFotos/styleFotos.css">
 </head>
+
 <body>
+
+  <!-- Menu-->
+  <div class="menu">
+    <img class="logo" src="./Components/Imagens/Group.png" alt="Logo Catus">
+
+
+      <!-- Modal Mobile-->
+    <div class="modalMobile">
+      <button class="botao" onclick="document.getElementById('modal').style.display = 'block';"> ≡ </button>
+        <div id="modal">
+        <div id="modal-conteudo">
+          <a href="#">Loja</a>
+          <a href="#">Login</a>
+          <a href="#">Sobre</a>
+          <a href="#">Contato</a>
+      <button class="botao" onclick="document.getElementById('modal').style.display = 'none';">Fechar</button>
+    </div>
+  </div>
+</div>
+
+
+    <ul>
+      <li><a href="#">Loja</a></li>
+      <li><a href="#">Login</a></li>
+      <li><a href="#">Sobre</a></li>
+      <li><a href="#">Contato</a></li>
+    </ul>
+
+    <input class="digiteaqui" type="text" placeholder="Digite aqui sua busca">
+    <button><img class="botoesMenu" src="./Components//Imagens/Union.svg" alt=""></button>
+
+    <button><img class="botoesMenu" src="./Components//Imagens/cart.svg" alt=""></button>
+  </div>
+
+
+
+
+
+
+  <!-- Conteúdo da página -->
+  <div class="containerImg">
+    <div class="colunaEsquerda">
+      <img class="imgPequena" src="./Components/Imagens/berço.png" alt="">
+      <img class="imgPequena" src="./Components/Imagens/maefilho.png" alt="">
+    </div>
     
-<!-- Menu-->
-<div class="menu"> 
-        <img class="logo" src="./Components/Imagens/Group.png" alt="Logo Catus" >
-
- <button class="botaomenu" onclick="document.getElementById('Modal').showModal()">☰</button>
-
-<dialog id="Modal">
-  <p>Olá mundo!</p>
-  <button onclick="document.getElementById('Modal').close()">X</button>
-</dialog>
-       
-
-         <ul >
-          <li><a href="#">Loja</a></li>
-          <li><a href="#">Login</a></li>
-          <li><a href="#">Sobre</a></li>
-          <li><a href="#">Contato</a></li>
-        </ul>
-     
-        <input  type="text" placeholder="Digite aqui sua busca">
-        <button><img src="./Components//Imagens/Union.svg" alt=""></button>
-        <button><img src="./Components//Imagens/cart.svg" alt=""></button>
-      </div>
-     
-
-
-        
-       
-      
-      <!-- Conteúdo da página -->
-     
+    <div class="colunaMeio">
+      <img class="imagemGrande" src="./Components/Imagens/maeFilhoRua.png" alt="">
+    </div>
     
+    <div class="colunaDireita">
+      <img class="imgPequena" src="./Components/Imagens/gravida.png" alt="">
+      <img class="imgPequena" src="./Components/Imagens/familia.png" alt="">
+    </div>
+  </div>
 </body>
+
 </html>
