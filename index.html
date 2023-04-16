@@ -151,6 +151,61 @@ let intervaloTempo = 2000; // 3 segundos
 const arrumarItens = (item, index) => {
   item.style.left = larguraItem * index + 'px';
 };
+//mover com o arrastar 
+let posicaoInicial = null;
+let posicaoAtual = null;
+let posicaoFinal = null;
+
+trilha.addEventListener('mousedown', iniciarArraste);
+trilha.addEventListener('touchstart', iniciarArraste);
+
+trilha.addEventListener('mousemove', arrastar);
+trilha.addEventListener('touchmove', arrastar);
+
+trilha.addEventListener('mouseup', finalizarArraste);
+trilha.addEventListener('touchend', finalizarArraste);
+
+function iniciarArraste(e) {
+  if (e.type === 'mousedown') {
+    posicaoInicial = e.clientX;
+  } else {
+    posicaoInicial = e.touches[0].clientX;
+  }
+  clearInterval(intervaloMover);
+}
+
+function arrastar(e) {
+  e.preventDefault();
+  if (posicaoInicial !== null) {
+    if (e.type === 'mousemove') {
+      posicaoAtual = e.clientX;
+    } else {
+      posicaoAtual = e.touches[0].clientX;
+    }
+    const distancia = posicaoAtual - posicaoInicial;
+    trilha.style.transform = `translateX(-${larguraItem * itemAtual + distancia}px)`;
+  }
+}
+
+function finalizarArraste(e) {
+  if (posicaoInicial !== null && posicaoAtual !== null) {
+    posicaoFinal = posicaoAtual;
+    const distancia = posicaoFinal - posicaoInicial;
+    if (distancia > larguraItem / 4) {
+      moverParaItemAnterior();
+    } else if (distancia < -larguraItem / 4) {
+      moverParaProximoItem();
+    } else {
+      moverParaItem(trilha, itens[itemAtual], itens[itemAtual]);
+    }
+  }
+  posicaoInicial = null;
+  posicaoAtual = null;
+  posicaoFinal = null;
+  intervaloMover = setInterval(() => {
+    moverParaProximoItem();
+  }, intervaloTempo);
+}
 
 itens.forEach(arrumarItens);
 
