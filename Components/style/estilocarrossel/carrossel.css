@@ -1,82 +1,77 @@
 .carousel {
+  display: flex;
   position: relative;
-  padding-top: 80px;
+  height: 320px;
   width: 80%;
   left: 10%;
   overflow: hidden;
 }
-
-.slider {
+.carousel-track {
   display: flex;
-  transition: transform 0.5s ease;
-}
-
-.slider img {
-  width: 250px;
-  height: 250px;
-  margin-right: 20px;
-}
-
-.prev,
-.next {
   position: absolute;
-  top: 50%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s ease-in-out;
+}
+.carousel-item {
+  position: relative;
+  max-width: 120px;
+  margin-right: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.carousel-item img {
+  width: 200px;
+}
+.carousel-item .carousel-item-title {
+  position: relative;
+  padding-left: 30px;
+}
+.carousel-item p {
+  display: flex;
+  margin: 0;
+  font-size: 22px;
+  justify-content: center;
+  width: 100%;
+}
+.carousel-item-number {
+  display: flex;
+  font-weight: bold;
+  color: red;
+  justify-content: center;
+  width: 100%;
+}
+.carousel-item-title {
+  font-weight: 400;
+}
+.carousel-item-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.carousel-button {
+  position: absolute;
+  top: 40%;
   transform: translateY(-50%);
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   background-color: rgba(0, 0, 0, 0.3);
   color: #fff;
-  font-size: 20px;
   border: none;
-  outline: none;
   cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease-in-out;
 }
-
-.prev:hover,
-.next:hover {
+.carousel-button:hover {
   background-color: rgba(0, 0, 0, 0.5);
 }
-
-.next {
+.carousel-button--left {
+  left: 0px;
+}
+.carousel-button--right {
   right: 0;
-}
-
-.slider:before,
-.slider:after {
-  content: "";
-  width: 20px;
-  height: 100%;
-  position: absolute;
-  z-index: 1;
-  top: 0;
-  background: linear-gradient(to right, transparent 0, #fff 100%);
-}
-
-.slider:before {
-  left: 0;
-}
-
-.slider:after {
-  right: 0;
-  transform: scaleX(-1);
-}
-
-.caption, h3, p {
-  position: relative;
-  top: 100px;
-  color: aqua;
-}
-
-@media (max-width: 768px) {
-  .slider img {
-    width: 150px;
-    height: 150px;
-    margin-right: 10px;
-  }
-  .prev,
-  .next {
-    width: 30px;
-    height: 30px;
-    font-size: 16px;
-  }
 }/*# sourceMappingURL=carrossel.css.map */
