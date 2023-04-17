@@ -14,7 +14,11 @@
   -behavior: smooth;
   scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch;
-  overflow: hidden;
+  scrollbar-width: 20px;
+}
+
+.carousel::-webkit-scrollbar {
+  width: 6px;
 }
 
 figure {
