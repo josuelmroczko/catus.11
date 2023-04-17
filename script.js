@@ -1,3 +1,4 @@
+
 const carousel = document.querySelector('.carousel');
     const buttonLeft = document.querySelector('.carousel-button-left');
     const buttonRight = document.querySelector('.carousel-button-right');
