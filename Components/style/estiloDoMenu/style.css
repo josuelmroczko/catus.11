@@ -27,6 +27,7 @@
 .menu button {
   background-color: transparent;
   border: none;
+  cursor: pointer;
 }
 
 .modalMobile {

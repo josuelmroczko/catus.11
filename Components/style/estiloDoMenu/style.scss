@@ -23,7 +23,6 @@ $cor-cinza: #eeeeee;
     a {
       color: $cor-preto;
       text-decoration: none;
-  
     }
   }
 
@@ -35,17 +34,17 @@ $cor-cinza: #eeeeee;
   button {
     background-color: transparent;
     border: none;
+    cursor: pointer;
   }
 }
 .modalMobile {
   display: none;
 }
-.fundoBotao{
+.fundoBotao {
   color: #3d3d3d;
   text-decoration: none;
   font-weight: bolder;
 }
-
 
 @media screen and (max-width: 700px) {
   li {
@@ -53,9 +52,8 @@ $cor-cinza: #eeeeee;
   }
   .botaomenu {
     display: flex;
-    
   }
-  .botaoFechar{
+  .botaoFechar {
     font-size: 20px;
     width: 30px;
   }
@@ -66,14 +64,14 @@ $cor-cinza: #eeeeee;
     padding-left: 10%;
     font-size: 20px;
     width: 5%;
-    
+
     .botao {
       font-size: 20px;
     }
   }
 }
-@media screen and (max-width: 455px){
-  .digiteaqui{
+@media screen and (max-width: 455px) {
+  .digiteaqui {
     display: none;
   }
-} 
+}

@@ -6,7 +6,9 @@
   padding-top: 50px;
 }
 
-.novidades, h2, p {
+.novidades,
+h2,
+p {
   text-align: center;
 }
 
