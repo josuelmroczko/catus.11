@@ -1,77 +1,58 @@
-.carousel {
-  display: flex;
+.carousel-container {
   position: relative;
-  height: 320px;
-  width: 80%;
-  left: 10%;
+  width: 100%;
+  height: auto;
+  max-width: 1100px;
+  margin: 0 auto;
+  height: 500px;
   overflow: hidden;
 }
-.carousel-track {
+
+.carousel {
   display: flex;
-  position: absolute;
-  top: 0;
-  left: 0;
+  overflow-x: scroll;
+  -behavior: smooth;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  overflow: hidden;
+}
+
+figure {
+  position: relative;
+  flex: 0 0 auto;
   width: 100%;
-  height: 100%;
-  transition: transform 0.3s ease-in-out;
-}
-.carousel-item {
-  position: relative;
-  max-width: 120px;
-  margin-right: 10px;
-  display: flex;
-  flex-direction: column;
-}
-.carousel-item img {
-  width: 200px;
-}
-.carousel-item .carousel-item-title {
-  position: relative;
-  padding-left: 30px;
-}
-.carousel-item p {
-  display: flex;
+  max-width: 290px;
   margin: 0;
-  font-size: 22px;
-  justify-content: center;
-  width: 100%;
+  scroll-snap-align: center;
+  text-align: center;
+  height: 300px;
 }
-.carousel-item-number {
-  display: flex;
-  font-weight: bold;
-  color: red;
-  justify-content: center;
-  width: 100%;
+
+figcaption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
 }
-.carousel-item-title {
-  font-weight: 400;
-}
-.carousel-item-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
+
 .carousel-button {
   position: absolute;
-  top: 40%;
+  top: 30%;
   transform: translateY(-50%);
-  width: 40px;
-  height: 40px;
-  background-color: rgba(0, 0, 0, 0.3);
-  color: #fff;
+  z-index: 1;
+  background-color: transparent;
   border: none;
+  font-size: 2rem;
+  color: #000000;
   cursor: pointer;
-  font-size: 16px;
-  font-weight: bold;
-  transition: background-color 0.3s ease-in-out;
 }
-.carousel-button:hover {
-  background-color: rgba(0, 0, 0, 0.5);
+
+.carousel-button-left {
+  left: 0;
 }
-.carousel-button--left {
-  left: 0px;
-}
-.carousel-button--right {
+
+.carousel-button-right {
   right: 0;
 }/*# sourceMappingURL=carrossel.css.map */
