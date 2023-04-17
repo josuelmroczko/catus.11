@@ -73,12 +73,34 @@ span {
   color: $cor-texto-destaque;
 }
 .novidades {
-  h2{
-font-size: 50px;
+  h2 {
+    font-size: 3.125em; /*equivalente a 50px*/
+  }
+  p {
+    font-size: 1.25em; /*equivalente a 20px*/
+  }
+}
 
+@media screen and (max-width: 768px) {
+  /*Ajuste de font-size para dispositivos menores*/
+  .novidades {
+    h2 {
+      font-size: 2.5em; /*equivalente a 40px*/
+    }
+    p {
+      font-size: 1.125em; /*equivalente a 18px*/
+    }
+  }
+}
 
- }
- p{
-  font-size: 20px;
- }
+@media screen and (max-width: 576px) {
+  /*Ajuste de font-size para dispositivos ainda menores*/
+  .novidades {
+    h2 {
+      font-size: 2.125em; /*equivalente a 34px*/
+    }
+    p {
+      font-size: 1em; /*equivalente a 16px*/
+    }
+  }
 }
