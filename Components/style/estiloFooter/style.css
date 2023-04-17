@@ -47,4 +47,11 @@ footer h4 {
   border-image-slice: 1;
   border-image-source: linear-gradient(to right, #00FF7F 50%, #FFFFFF 50%);
   margin-bottom: 20px; /* adiciona uma margem de 20px na parte inferior */
+}
+
+@media screen and (max-width: 514px) {
+  footer {
+    width: 100%;
+    padding: 0;
+  }
 }/*# sourceMappingURL=style.css.map */

@@ -59,3 +59,11 @@ footer {
     margin-bottom: 20px; /* adiciona uma margem de 20px na parte inferior */
   }
 }
+
+@media screen and (max-width: 514px){
+    footer{
+     width: 100%;
+     padding: 0;
+        
+    }
+}
