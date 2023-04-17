@@ -8,7 +8,7 @@ $cor-texto-destaque: red;
   padding-top: 100px;
   width: 100%;
   height: auto;
-  max-width: 1100px;
+  max-width: 1000px;
   margin: 0 auto;
   height: 500px;
   overflow: hidden;
@@ -31,12 +31,13 @@ figure {
   position: relative;
   flex: 0 0 auto;
   width: 100%;
-  max-width: 290px;
+  max-width: 357px;
   margin: 0;
   scroll-snap-align: center;
 
   text-align: center;
   height: 300px;
+  
 }
 
 figcaption {
