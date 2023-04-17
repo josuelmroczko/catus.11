@@ -7,8 +7,7 @@
   height: 500px;
   overflow: hidden;
 }
-
-.carousel {
+.carousel-container .carousel {
   display: flex;
   overflow-x: scroll;
   -behavior: smooth;
@@ -16,8 +15,7 @@
   -webkit-overflow-scrolling: touch;
   scrollbar-width: 20px;
 }
-
-.carousel::-webkit-scrollbar {
+.carousel-container .carousel::-webkit-scrollbar {
   width: 6px;
 }
 
