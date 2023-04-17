@@ -58,6 +58,56 @@ figcaption {
   left: 0;
 }
 
+<<<<<<< HEAD
 .carousel-button-right {
   right: 0;
 }
+=======
+    &-number {
+      display: flex;
+      font-weight: bold;
+      color: red;
+      justify-content: center;
+      width: 100%;
+    }
+
+    &-title {
+      font-weight: 400;
+    }
+
+    &-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  &-button {
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out;
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    &--left {
+      left: 0px;
+    }
+
+    &--right {
+      right: 0;
+    }
+  }
+}
+>>>>>>> 0f42ef8455e419cc1dd93b655aff8029c5317807
