@@ -23,18 +23,18 @@
 
 
       <!-- Modal Mobile-->
-      <div class="modalMobile">
-        <button class="botao" onclick="abrirModal()"> ≡ </button>
-        <div id="modal" style="display: none;">
-          <div id="modal-conteudo">
-            <a class="fundoBotao" href="#">Loja</a>
-            <a class="fundoBotao" href="#">Login</a>
-            <a class="fundoBotao" href="#">Sobre</a>
-            <a class="fundoBotao" href="#">Contato</a>
-            <button class="botaoFechar" onclick="fecharModal()">x</button>
-          </div>
-        </div>
-      </div>
+    <div class="modalMobile">
+      <button class="botao" onclick="document.getElementById('modal').style.display = 'block';"> ≡ </button>
+        <div id="modal">
+        <div id="modal-conteudo">
+          <a class="fundoBotao" href="#">Loja</a>
+          <a class="fundoBotao" href="#">Login</a>
+          <a class="fundoBotao" href="#">Sobre</a>
+          <a class="fundoBotao" href="#">Contato</a>
+      <button class="botaoFechar" onclick="document.getElementById('modal').style.display = 'none';">x</button>
+    </div>
+  </div>
+</div>
 
 
     <ul>
@@ -165,7 +165,6 @@
    </footer>
 
   <script>
-    
 const carousel = document.querySelector('.carousel');
 const buttonLeft = document.querySelector('.carousel-button-left');
 const buttonRight = document.querySelector('.carousel-button-right');
