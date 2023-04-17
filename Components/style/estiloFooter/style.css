@@ -1,3 +1,5 @@
+@charset "UTF-8";
+/* Definindo estilos para o rodapé */
 footer {
   padding: 4rem;
   background-color: #404040;
@@ -6,6 +8,12 @@ footer {
   justify-content: space-evenly;
   align-items: baseline;
   color: #FFFFFF;
+  /* Estilos para a seção de atendimento */
+  /* Estilos para o link do telefone */
+  /* Estilos para a seção de horários */
+  /* Estilos para os selos de segurança */
+  /* Estilos para a seção de formas de pagamento */
+  /* Estilos para o título das seções */
 }
 footer .atendimento {
   padding: 2rem;
@@ -49,6 +57,7 @@ footer h4 {
   margin-bottom: 20px; /* adiciona uma margem de 20px na parte inferior */
 }
 
+/* Definindo estilos para dispositivos com largura máxima de 514px */
 @media screen and (max-width: 514px) {
   footer {
     width: 100%;

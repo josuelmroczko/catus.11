@@ -1,3 +1,8 @@
+$cor-fundo: #FFFFFF;
+$cor-botao: #000000;
+$cor-fundo-figcaption: rgba(255, 255, 255, 0.8);
+$cor-texto-destaque: red;
+
 .carousel-container {
   position: relative;
   padding-top: 100px;
@@ -7,10 +12,10 @@
   margin: 0 auto;
   height: 500px;
   overflow: hidden;
-  
+
   .carousel {
     display: flex;
-    overflow-x: scroll ;
+    overflow-x: scroll;
     -behavior: smooth;
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
@@ -29,7 +34,7 @@ figure {
   max-width: 290px;
   margin: 0;
   scroll-snap-align: center;
-  
+
   text-align: center;
   height: 300px;
 }
@@ -40,19 +45,18 @@ figcaption {
   left: 0;
   right: 0;
   padding: 10px;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: $cor-fundo-figcaption;
 }
 
 .carousel-button {
   position: absolute;
-  top: 30%;
+  top: 200px;
   transform: translateY(-50%);
   z-index: 1;
   background-color: transparent;
- 
   border: none;
   font-size: 2rem;
-  color: #000000;
+  color: $cor-botao;
   cursor: pointer;
 }
 
@@ -62,4 +66,8 @@ figcaption {
 
 .carousel-button-right {
   right: 0;
+}
+
+span {
+  color: $cor-texto-destaque;
 }

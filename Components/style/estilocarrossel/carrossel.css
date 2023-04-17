@@ -42,7 +42,7 @@ figcaption {
 
 .carousel-button {
   position: absolute;
-  top: 30%;
+  top: 200px;
   transform: translateY(-50%);
   z-index: 1;
   background-color: transparent;
@@ -58,4 +58,8 @@ figcaption {
 
 .carousel-button-right {
   right: 0;
+}
+
+span {
+  color: red;
 }/*# sourceMappingURL=carrossel.css.map */
